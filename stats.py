@@ -40,5 +40,5 @@ def z_score(x, mew, std_div):
 def choose(a,b):
     return math.factorial(a)/(math.factorial(b) * math.factorial(a - b))
 
-def binom_prob(k, n, p):
-    return c(n, k) * p**k * (1 - p)**(n-k)
+def binom_prob(n, k, p):
+    return choose(n, k) * p**k * (1 - p)**(n-k)
