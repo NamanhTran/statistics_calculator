@@ -18,6 +18,7 @@ Binomial Probability: binom_prob(k, n, p)
 You will need
 
 ```
+Terminal Access
 Python 3.6 (or later versions)
 Ability to run python's IDLE
 ```
@@ -39,16 +40,21 @@ import stats
 ```
 4) Done!
 
-Just remember when you want to use a stats function prefix it with stats.*Function_Name*
+Just remember when you want to use a stats function prefix it with ```stats.```*Function_Name* or even better instead of typing ```import stats```, type ```from stats import all``` to use the function without prefixing the library
 
 ### Example
 
 ```
-import stats
-stats.quartiles([2,4,5,5,5,5,6,6,7,8,10,11,12,13,16,17,19,19,24,25,32,38,49,53])
-Q0: 2
-Q1: 5.5
-Q2: 11.5
-Q3: 21.5
-Q4: 53
+>>> import stats
+>>> stats.quartiles([77,289,128,59,19,148,157,203,126,118,104,141,290,48,3,2,372,140,438,56,44,274,479,211,179,1,68,386,2631,90,30,57,89,116,225,700,40,73,75,51,148,9,115,19,76,138,178,76,67,102,35,80,143,951,106,55,4,54,137,367,277,201,52,9,700,182,73,199,325,75,103,64,121,11,9,88,1148,2,465,25])
+
+Q0: 1
+Q1: 54.5
+Q2: 103.5
+Q3: 200.0
+Q4: 2631
+IRQ: 145.5
+IRQ x 1.5: 218.25
+Lower Fence: -163.75
+Upper Fence: 418.25
 ```
